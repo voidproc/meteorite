@@ -520,7 +520,7 @@ void DrawBG(const Texture& bgTexture)
 
 void Main()
 {
-	Window::SetTitle(U"Meteorite Protection System v1.0.0");
+	Window::SetTitle(U"Meteorite Protection System v1.0.1");
 
 	Scene::SetBackground(ColorF{ 0 });
 
@@ -652,6 +652,7 @@ void Main()
 					hiscore = score;
 				}
 				score = 0;
+				ratio = 1.0;
 
 				timerPlayerdead.reset();
 				time.reset();
