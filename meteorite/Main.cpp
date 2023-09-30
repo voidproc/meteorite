@@ -520,6 +520,8 @@ void DrawBG(const Texture& bgTexture)
 
 void Main()
 {
+	Window::SetTitle(U"Meteorite Protection System v1.0.0");
+
 	Scene::SetBackground(ColorF{ 0 });
 
 	TextureAsset::Register(U"Meteorite", U"⭐"_emoji);
