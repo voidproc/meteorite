@@ -11,4 +11,4 @@ OpenSiv3D Discord game-idea チャンネルのお題「入る」より。
 - https://voidproc.github.io/meteorite_web/meteorite_wasm.html
 
 ## ダウンロード (Windows)
-- https://github.com/voidproc/meteorite/releases/download/v1.0.0/meteorite.zip
+- https://github.com/voidproc/meteorite/releases/download/v1.0.1/meteorite.zip
