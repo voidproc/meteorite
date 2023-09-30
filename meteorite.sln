@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33815.320
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "meteorite", "meteorite\meteorite.vcxproj", "{F2C07D5F-F5BA-42D9-93E4-A1B08C2D9DFF}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "meteorite_wasm", "meteorite_wasm\meteorite_wasm.vcxproj", "{8923E771-057A-4338-ABBE-65BDDBBC952E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Emscripten = Debug|Emscripten
+		Debug|x64 = Debug|x64
+		Release|Emscripten = Release|Emscripten
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F2C07D5F-F5BA-42D9-93E4-A1B08C2D9DFF}.Debug|Emscripten.ActiveCfg = Debug|x64
+		{F2C07D5F-F5BA-42D9-93E4-A1B08C2D9DFF}.Debug|Emscripten.Build.0 = Debug|x64
+		{F2C07D5F-F5BA-42D9-93E4-A1B08C2D9DFF}.Debug|x64.ActiveCfg = Debug|x64
+		{F2C07D5F-F5BA-42D9-93E4-A1B08C2D9DFF}.Debug|x64.Build.0 = Debug|x64
+		{F2C07D5F-F5BA-42D9-93E4-A1B08C2D9DFF}.Release|Emscripten.ActiveCfg = Release|x64
+		{F2C07D5F-F5BA-42D9-93E4-A1B08C2D9DFF}.Release|Emscripten.Build.0 = Release|x64
+		{F2C07D5F-F5BA-42D9-93E4-A1B08C2D9DFF}.Release|x64.ActiveCfg = Release|x64
+		{F2C07D5F-F5BA-42D9-93E4-A1B08C2D9DFF}.Release|x64.Build.0 = Release|x64
+		{8923E771-057A-4338-ABBE-65BDDBBC952E}.Debug|Emscripten.ActiveCfg = Debug|Emscripten
+		{8923E771-057A-4338-ABBE-65BDDBBC952E}.Debug|Emscripten.Build.0 = Debug|Emscripten
+		{8923E771-057A-4338-ABBE-65BDDBBC952E}.Debug|x64.ActiveCfg = Debug|Emscripten
+		{8923E771-057A-4338-ABBE-65BDDBBC952E}.Debug|x64.Build.0 = Debug|Emscripten
+		{8923E771-057A-4338-ABBE-65BDDBBC952E}.Release|Emscripten.ActiveCfg = Release|Emscripten
+		{8923E771-057A-4338-ABBE-65BDDBBC952E}.Release|Emscripten.Build.0 = Release|Emscripten
+		{8923E771-057A-4338-ABBE-65BDDBBC952E}.Release|x64.ActiveCfg = Release|Emscripten
+		{8923E771-057A-4338-ABBE-65BDDBBC952E}.Release|x64.Build.0 = Release|Emscripten
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {07D5D464-AA7C-4FE7-9371-6816C4EE2079}
+	EndGlobalSection
+EndGlobal
