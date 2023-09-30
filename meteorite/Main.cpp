@@ -543,7 +543,11 @@ void Main()
 	int hiscore = 0;
 
 	// もやもや画像
+#if SIV3D_PLATFORM(WINDOWS)
 	Image bgImage{ Resource(U"assets/moyamoya.png") };
+#elif SIV3D_PLATFORM(WEB)
+	Image bgImage{ U"assets/moyamoya.png" };
+#endif
 	bgImage
 		.blur(4)
 		.grayscale();
