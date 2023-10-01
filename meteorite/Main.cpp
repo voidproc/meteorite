@@ -225,7 +225,7 @@ private:
 
 };
 
-using MeteoritePtr = std::shared_ptr<Meteorite>;
+using MeteoritePtr = std::unique_ptr<Meteorite>;
 
 class Player
 {
@@ -396,7 +396,7 @@ private:
 
 };
 
-using BarrierPtr = std::shared_ptr<Barrier>;
+using BarrierPtr = std::unique_ptr<Barrier>;
 
 
 void UpdateMeteorites(Array<MeteoritePtr>& meteorites, Player& player, Effect& effect)
@@ -619,7 +619,7 @@ void Main()
 					const Vec2 pos = RandomVec2(RectF{ Scene::Width(), 0, 16, Scene::Height() }.stretched(0, -16));
 					const Circular vel{ Random(0.75 - 0.3 * rank, 3.0 + 5.0 * rank), 270_deg + Random(-20_deg, 20_deg) };
 					const double size = 16.0 + Random(-8.0, 8.0 + 10.0 * rank); //8～34
-					meteorites.emplace_back(std::make_shared<Meteorite>(pos, vel, size));
+					meteorites.emplace_back(std::make_unique<Meteorite>(pos, vel, size));
 				}
 			}
 
@@ -631,7 +631,7 @@ void Main()
 				const Vec2 pos = RandomVec2(RectF{ 0, 0, 16, Scene::Height() }.stretched(0, -48));
 				const Circular vel{ Random(5.0, 15.0), 90_deg + Sign(Scene::Height() / 2.0 - pos.y) * Random(0_deg, 20_deg) };
 				const double size = 20.0 + Random(0.0, 60.0);
-				barriers.emplace_back(std::make_shared<Barrier>(pos, vel, size));
+				barriers.emplace_back(std::make_unique<Barrier>(pos, vel, size));
 			}
 
 
