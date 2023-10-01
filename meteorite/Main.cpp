@@ -582,13 +582,17 @@ void Main()
 		{
 			if (MouseL.down())
 			{
+				score = 0;
 				timeTitle.reset();
 				time.restart();
 			}
 
-			FontAsset(U"BarrierState")(U"HISCORE").drawAt(16, Scene::CenterF().movedBy(0, -64));
-			FontAsset(U"Score")(U"{:08d}"_fmt(hiscore)).drawAt(TextStyle::Outline(0.2, Palette::Black), 48, Scene::CenterF().movedBy(0, -24));
-			FontAsset(U"BarrierState")(U"CLICK TO START MISSION").drawAt(18, Scene::CenterF().movedBy(0, 112));
+			FontAsset(U"BarrierState")(U"SCORE").drawAt(16, Scene::CenterF().movedBy(0, -144));
+			FontAsset(U"Score")(U"{:08d}"_fmt(score)).drawAt(TextStyle::Outline(0.2, Palette::Black), 48, Scene::CenterF().movedBy(0, -104));
+
+			FontAsset(U"BarrierState")(U"HISCORE").drawAt(16, Scene::CenterF().movedBy(0, -32));
+			FontAsset(U"Score")(U"{:08d}"_fmt(hiscore)).drawAt(TextStyle::Outline(0.2, Palette::Black), 48, Scene::CenterF().movedBy(0, 8));
+			FontAsset(U"BarrierState")(U"CLICK TO START MISSION").drawAt(18, Scene::CenterF().movedBy(0, 144));
 		}
 
 		// メイン
@@ -651,7 +655,6 @@ void Main()
 				{
 					hiscore = score;
 				}
-				score = 0;
 				ratio = 1.0;
 
 				timerPlayerdead.reset();
