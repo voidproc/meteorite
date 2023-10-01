@@ -520,7 +520,7 @@ void DrawBG(const Texture& bgTexture)
 
 void Main()
 {
-	Window::SetTitle(U"Meteorite Protection System v1.0.1");
+	Window::SetTitle(U"Meteorite Protection System v1.1.0");
 
 	Scene::SetBackground(ColorF{ 0 });
 
